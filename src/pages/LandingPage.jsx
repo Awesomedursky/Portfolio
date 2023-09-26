@@ -3,6 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from '../assets/me.png';
 import { motion } from 'framer-motion';
 import SocialMediaIcons from '../Components/SocialMediaIcons';
+import Brush from '../assets/brush.png';
 
 const LandingPage = ({ setSelectedPage }) => {
   const isAboveMdScreen = useMediaQuery({ query: '(min-width:1060px )' });
@@ -28,7 +29,7 @@ const LandingPage = ({ setSelectedPage }) => {
           <p className='text-2xl md:mb-4 font-opensans text-center md:text-start'>Hi! I am</p>
           <p className='text-6xl font-playfair z-20 text-center md:text-start '>
             <span className='z-20'>Ayodele</span> {''}
-            <span className='lg:relative lg:text-deep-blue lg:font-semibold z-20 lg:before:content-brush before:absolute before:right-[-100px] before:bottom-[-100px] before:z-[-100] before:-top-26'>Ayodeji</span>
+            <span className={`lg:relative lg:text-deep-blue lg:font-semibold z-20 lg:before:content-brush before:absolute before:right-[-100px] before:bottom-[-100px] before:z-[-100] before:-top-26`}>Ayodeji</span>
           </p>
 
           <p className=' mt-12 mb-7 text-base text-justify'>
@@ -61,7 +62,7 @@ const LandingPage = ({ setSelectedPage }) => {
         </motion.div>
 
         <motion.div initial='hidden' whileInView='visible' viewport={{ once: false, amount: 0.5 }} transition={{ delay: 0.4, duration: 0.5 }} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }} className='flex mt-5 justify-center md:justify-start'>
-            <SocialMediaIcons/>
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>

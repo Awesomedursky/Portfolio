@@ -1,3 +1,4 @@
+import Brush from './src/assets/brush.'
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
@@ -21,7 +22,7 @@ module.exports = {
         opensans: ['Open Sans', 'sans-serif'],
       },
       content: {
-        brush: "url('./src/assets/brush.png')",
+        brush: "url('../src/assets/brush.png')",
       },
     },
   },
