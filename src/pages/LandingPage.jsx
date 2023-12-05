@@ -3,12 +3,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from '../assets/me.png';
 import { motion } from 'framer-motion';
 import SocialMediaIcons from '../Components/SocialMediaIcons';
-import Brush from '../assets/brush.png';
 
 const LandingPage = ({ setSelectedPage }) => {
   const isAboveMdScreen = useMediaQuery({ query: '(min-width:1060px )' });
   return (
-    <section id='home' className='md:flex md:justify-between md:items-center  py-10  mx-auto w-5/6 gap-6'>
+    <section id='Home' className='md:flex md:justify-between md:items-center  py-10  mx-auto w-5/6 gap-6'>
       {/* Image Section */}
       <div className='md:order-2 flex justify-center z-10 mt-6'>
         {isAboveMdScreen ? (
@@ -43,7 +42,7 @@ const LandingPage = ({ setSelectedPage }) => {
           <AnchorLink
             className=' bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue  hover:text-white transition duration-500'
             onClick={() => {
-              setSelectedPage('contact');
+              setSelectedPage('#contact');
             }}
             href='#contact'
           >

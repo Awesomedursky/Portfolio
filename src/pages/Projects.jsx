@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import LineGradient from '../Components/LineGradient';
 import ProjectOne from '../assets/ProjectOne.png';
 import ProectTwo from '../assets/ProjectTwo.png';
+import projectThree from '../assets/projectThree.png'
 
 const Projects = () => {
   return (
@@ -28,6 +29,14 @@ const Projects = () => {
                 <img src={ProectTwo} alt={ProectTwo} className='max-w-[400px] h-2/4' />
                 <div className='p-2'>
                   <h3>Movie App</h3>
+                </div>
+              </div>
+            </a>
+            <a className='hover:opacity-50 hover:scale-110 transition duration-500' href='https://crwn-app-roan.vercel.app/' target='_blank' rel='noreferrer'>
+              <div className='border-red border rounded-lg overflow-clip'>
+                <img src={projectThree} alt={projectThree} className='max-w-[400px] h-2/4' />
+                <div className='p-2'>
+                  <h3>Crwn App</h3>
                 </div>
               </div>
             </a>

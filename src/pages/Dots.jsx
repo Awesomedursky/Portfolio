@@ -6,7 +6,7 @@ const Dots = ({ selectedPage, setSelectedPage }) => {
     <div className='flex flex-col gap-6 fixed top-[60%] right-7'>
       <AnchorLink className={`${selectedPage === 'home' ? selectedStyles : 'bg-dark-grey'} w-3 h-3 rounded-full`} href='#home' onClick={() => setSelectedPage('home')} />
       <AnchorLink className={`${selectedPage === 'skills' ? selectedStyles : 'bg-dark-grey'} w-3 h-3 rounded-full`} href='#skills' onClick={() => setSelectedPage('skills')} />
-      <AnchorLink className={`${selectedPage === 'projetcs' ? selectedStyles : 'bg-dark-grey'} w-3 h-3 rounded-full`} href='#projetcs' onClick={() => setSelectedPage('projetcs')} />
+      <AnchorLink className={`${selectedPage === 'projetcs' ? selectedStyles : 'bg-dark-grey'} w-3 h-3 rounded-full`} href='#projects' onClick={() => setSelectedPage('projects')} />
       <AnchorLink className={`${selectedPage === 'contact' ? selectedStyles : 'bg-dark-grey'} w-3 h-3 rounded-full`} href='#contact' onClick={() => setSelectedPage('contact')} />
     </div>
   );
