@@ -39,25 +39,13 @@ const LandingPage = ({ setSelectedPage }) => {
 
         {/* Call to Action */}
         <motion.div initial='hidden' whileInView='visible' viewport={{ once: false, amount: 0.5 }} transition={{ delay: 0.2, duration: 0.5 }} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }} className='flex mt-5 justify-center md:justify-start'>
-          <AnchorLink
-            className=' bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue  hover:text-white transition duration-500'
-            onClick={() => {
-              setSelectedPage('#contact');
-            }}
-            href='#contact'
-          >
+          <a className=' bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue  hover:text-white transition duration-500' href='mailto:ayodele.ayodejie@gmail.com'>
             {' '}
             Contact Me!
-          </AnchorLink>
-          <AnchorLink
-            className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 '
-            onClick={() => {
-              setSelectedPage('contact');
-            }}
-            href='#contact'
-          >
+          </a>
+          <a className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 ' href='https://wa.link/b2kye5'>
             <div className='bg-deep-blue hover:text-red transition duration-500 flex items-center justify-center font-playfair px-10 h-full'>Lets Talk!</div>
-          </AnchorLink>
+          </a>
         </motion.div>
 
         <motion.div initial='hidden' whileInView='visible' viewport={{ once: false, amount: 0.5 }} transition={{ delay: 0.4, duration: 0.5 }} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }} className='flex mt-5 justify-center md:justify-start'>
